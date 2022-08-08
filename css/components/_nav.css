@@ -1,0 +1,15 @@
+
+.nav {
+    display: grid;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: rgb(221, 154, 29);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-grow: 3;
+    width: 100%;
+    padding: 10px 0 5px 0;
+  }
+ 
+   

@@ -1,0 +1,17 @@
+._header {
+    display: grid;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: rgb(221, 154, 29);
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    
+}
+
+h1 {
+    background-color: transparent;
+    color: rgb(75, 94, 129);
+    
+}

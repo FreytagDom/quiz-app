@@ -1,6 +1,6 @@
 @import "./_base.css";
 @import "./_header.css";
-@import "./components/card.css";
+@import "./_bookmark.css";
 @import "./components/_icons.css";
 @import "./components/_nav.css";
 @import "./_main.css";

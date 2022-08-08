@@ -1,0 +1,29 @@
+
+.card {
+    display: grid;
+    background-color: rgb(202, 220, 163);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    
+}
+
+h2 {
+    background-color: transparent;
+
+}
+
+.card__text {
+    background-color: transparent;
+    display: grid;
+    position: relative;
+    padding: 50px;
+    
+}
+
+.button__next {
+    background-color: transparent;
+    align-self: center;
+   
+
+}

@@ -1,0 +1,11 @@
+
+.icons--home {
+    grid-column-start: 1;
+}
+
+.icons--bookmark {
+   grid-column-start: 2;
+}
+.icons--profile {
+    grid-column-start: 3;
+}

@@ -1,0 +1,46 @@
+
+.card {
+    display: grid;
+    background-color: rgb(187, 168, 168);
+    justify-content: space-evenly;
+    padding: 20px;
+    position: relative;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 30px 60px 30px 20px;
+    grid-template-areas: 
+    " h2 h2 " 
+    "ct ct ct"
+    "an an an"
+    " an an";
+}
+
+h2{
+    background-color: transparent;
+    color: rgb(33, 50, 135);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    grid-area: h2;
+
+}
+
+.card__text {
+    background-color: transparent;
+    position: relative;
+    padding: 50px;
+    grid-area: ct;
+    
+}
+
+.button__answer {
+    background-color: transparent;
+    align-self: center;
+    grid-area: ba;
+   
+
+}
+
+.answer {
+    color: rgb(33, 50, 135);
+    grid-area: an;
+}
+
