@@ -1,79 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body><a name="top"></a> 
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./index.js" type="module" defer></script>
+  </head>
+  <body>
     <header class="_header">
-        <h1>Quiz App</h1>
+      <h1>Quiz App</h1>
     </header>
-    
-    <main class="main">
 
-    <section class="card">
-        <h2 class="thema">Thema</h2>
-        <p class="card__text">
-        Frage: ....</p>
-    <p class="answer">Antwort</p><p class="answer">Antwort</p><p class="answer">Antwort</p>
-    <button class="button__answer">answer</button>
-    </section>
- 
-    <section class="card2"><h2>Thema</h2>
-    <p class="card__text">
-    Frage: ....</p>
-    <p class="answer">Antwort</p><p class="answer">Antwort</p><p class="answer">Antwort</p>
-<button class="button__answer">answer</button>
-</section>
+    <!-- Home -->
+    <div class="" data-js="questioncard">
+      <main class="main">
+        <!---Card1--->
+        <section data-js="q_card" class="card">
+          <img
+            data-js="bookmark_icon"
+            class="bookmarkicon"
+            src="./Img/Bookmark-icon.png"
+            alt="bookmarkicon"
+          />
+          <h2 class="thema">HTML</h2>
+          <p class="card__text">Who is the father of HTML?</p>
+          <p class="answer">Tim Berners-Lee</p>
+          <p data-js="wronganswer" class="answer">Sergey Brin</p>
+          <p data-js="wronganswer" class="answer">Rasmus Lerdorf</p>
+          <button data-js="answer_Button" class="button__answer">answer</button>
+        </section>
+        <!---Card2--->
+        <section data-js="q_card" class="card">
+          <img
+            data-js="bookmark_icon"
+            class="bookmarkicon"
+            src="./Img/Bookmark-icon.png"
+            alt="bookmarkicon"
+          />
+          <h2 class="thema">CSS</h2>
+          <p class="card__text">What does CSS stand for?</p>
+          <p data-js="wronganswer" class="answer">Computer Style Sheets</p>
+          <p data-js="wronganswer" class="answer">Creative Style Sheets</p>
+          <p class="answer">Cascading Style Sheets</p>
+          <button data-js="answer_Button" class="button__answer">answer</button>
+        </section>
 
+        <!---Card3--->
+        <section data-js="q_card" class="card">
+          <img
+            data-js="bookmark_icon"
+            class="bookmarkicon"
+            src="./Img/Bookmark-icon.png"
+            alt="bookmarkicon"
+          />
+          <h2 class="thema">HTML</h2>
+          <p class="card__text">HTML stands for ___</p>
+          <p data-js="wronganswer" class="answer">HyperText Machine Language</p>
+          <p class="answer">HyperText Markup Language</p>
+          <p data-js="wronganswer" class="answer">HyperText Marking Language</p>
+          <button data-js="answer_Button" class="button__answer">answer</button>
+        </section>
+      </main>
+    </div>
+    <!-- Bookmark -->
+    <div class="hidden" data-js="bookmark">
+      <main class="main">
+        <section class="card">
+          <h2 class="thema">Thema</h2>
+          <p class="card__text">Frage: ....</p>
+          <p class="answer">Antwort</p>
+          <p class="answer">Antwort</p>
+          <p class="answer">Antwort</p>
+        </section>
 
- <h2 class="thema">Thema</h2>
-        <p class="card__text">
-        Frage: ....
-    </p>
-    <p class="answer">Antwort</p><p class="answer">Antwort</p><p class="answer">Antwort</p>
-    <button class="button__answer">answer</button>
+        <section class="card">
+          <h2 class="thema">Thema</h2>
+          <p class="card__text">Frage: ....</p>
+          <p class="answer">Antwort</p>
+          <p class="answer">Antwort</p>
+          <p class="answer">Antwort</p>
+        </section>
+      </main>
+    </div>
+    <!-- Profile -->
+    <div class="hidden" data-js="profile">
+      <main class="main profile">
+        <h3>Profile</h3>
+        <form data-js="form">
+          <fieldset>
+            <legend>Enter your information</legend>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" />
+            <label for="interessen">Interessen</label>
+            <textarea
+              name="interessen"
+              id="interessen"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <button>Submit</button>
+        </form>
+      </main>
+    </div>
+    <!-- Creat Card -->
+    <div class="hidden" data-js="creat">
+      <h2>Creat Question</h2>
+      <main class="main_creat">
+        <section class="creat_card">
+          <label class="creat_category">
+            <h4>Creat Category</h4>
+            <textarea name="category" cols="5" rows="2"></textarea>
+          </label>
+          <label class="creat_question">
+            <h4>Creat Question</h4>
+            <textarea
+              class="creat_question"
+              name="creatquestion"
+              cols="15"
+              rows="5"
+            ></textarea>
+          </label>
+          <label class="creat_answer">
+            <h4>Creat Answer</h4>
+            <textarea
+              class="creat_answer"
+              name="creatanswer"
+              cols="20"
+              rows="5"
+            ></textarea>
+          </label>
 
- <h2>Thema</h2>
-        <p class="card__text">
-        Frage: ....
-    </p>
-    <p class="answer">Antwort</p><p class="answer">Antwort</p><p class="answer">Antwort</p>
-    <button class="button__answer">answer</button>
+          <button class="creat_answer-button" type="submit">Submit</button>
+        </section>
 
- <h2>Thema</h2>
-        <p class="card__text">
-        Frage: ....
-        <p class="answer">Antwort</p><p class="answer">Antwort</p><p class="answer">Antwort</p>
-        <button class="button__answer">answer</button>
-
- <h2>Thema</h2>
-        <p class="card__text">
-        Frage: ....
-    </p>
-    <p class="answer">Antwort</p><p class="answer">Antwort</p><p class="answer">Antwort</p>
-    <button class="button__answer">answer</button>
-
- <h2>Thema</h2>
-        <p class="card__text">
-        Frage: ....
-    </p>
-    <p class="answer">Antwort</p><p class="answer">Antwort</p><p class="answer">Antwort</p>
-    <button class="button__answer">answer</button>
- 
-
-<nav class="nav"> 
-    <a href="#top" class="icons--home">
-    <img src="./Img/home.png" alt="home" />
-  </a>
-  <a href="bookmarks.html" class="icons--bookmark">
-    <img src="./Img/Bookmark-icon.png" alt="bookmark" />
-  </a>
-  <a href="profile" class="icons--profile">
-    <img src="./Img/profile.png" alt="profile" />
-  </a></nav>
-</>
+        <!-- 
+        <label for="question-input">Question Input</label>
+        <input
+          id="question-input"
+          data-js="questionInput"
+          class="question_input"
+          type="text"
+        />
+        <label class="answer_input" for="answer-input"
+          >Answer Input<button type="submit">submit</button>
+        </label>
+        <input
+          id="answer-input"
+          data-js="answerInput"
+          class="answer_input"
+          type="text"
+        />  -->
+      </main>
+    </div>
+    <nav class="nav">
+      <button data-js="icons-home" class="icons--home">
+        <img src="./Img/home.png" alt="home" />
+      </button>
+      <button data-js="icons-bookmark" class="icons--bookmark">
+        <img src="./Img/Bookmark-icon.png" alt="bookmark" />
+      </button>
+      <button data-js="icons-profile" class="icons--profile">
+        <img src="./Img/profile.png" alt="profile" />
+      </button>
+      <button class="add_icon" data-js="add__icon">
+        <img src="./Img/plus.png" alt="add" />
+      </button>
+    </nav>
+  </body>
 </html>

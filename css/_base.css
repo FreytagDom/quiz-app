@@ -1,6 +1,8 @@
 *{
-    box-sizing: border-box;
-  
+   box-sizing: border-box;
+}
+.div-questioncard {
+   display: none;
 }
 :root {
     --primary: #e6beae;
@@ -24,8 +26,5 @@
     --fs-600: 1.75rem;
     --fs-900: 2.125rem;
   }
-
-  @media screen (min-width 300px) {
-   
-  }
+ 
   

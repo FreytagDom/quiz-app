@@ -3,13 +3,13 @@
     display: grid;
     justify-content: space-evenly;
     position: fixed;
-    background-color: rgb(221, 154, 29);
+    background: linear-gradient(to left, rgb(98, 190, 51), orange);
     left: 0;
     right: 0;
     bottom: 0;
-    flex-grow: 3;
+    flex-grow: 5;
     width: 100%;
-    padding: 10px 0 5px 0;
+    padding: 8px 0 8px 0;
   }
  
-   
+

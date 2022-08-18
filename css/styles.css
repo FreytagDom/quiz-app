@@ -4,3 +4,6 @@
 @import "./components/_icons.css";
 @import "./components/_nav.css";
 @import "./_main.css";
+@import "./utils.css";
+@import "./_profile.css";
+@import "./_creat.css";
