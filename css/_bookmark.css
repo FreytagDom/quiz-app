@@ -1,15 +1,23 @@
 
+
 .card {
     display: grid;
     background-color: rgb(202, 220, 163);
-    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
-    
+    margin: 10px;
+    position: relative;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 30px 60px 30px 20px;
 }
 
 h2 {
     background-color: transparent;
+    color: rgb(33, 50, 135);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-row: 1;
 
 }
 
@@ -18,12 +26,22 @@ h2 {
     display: grid;
     position: relative;
     padding: 50px;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2 ;
     
 }
 
-.button__next {
+.button__answer {
     background-color: transparent;
     align-self: center;
-   
+    grid-column: 2 / 3;
+   grid-row: 7 / 8;
 
 }
+
+.answer {
+    color: rgb(33, 50, 135);
+    grid-column: 1 7;
+    grid-row: 3/ 4;
+}
+

@@ -1,0 +1,40 @@
+.profile {
+    display: grid;
+    background-color: rgb(64, 141, 158);
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+
+h3 {
+    color: aquamarine;
+    font-size: 35px;
+    justify-content: center;
+}
+
+.profile-text {
+    color: blueviolet;
+    font-size: 20px;
+    justify-content: center;
+    
+}
+form * {
+	display: block;
+}
+
+fieldset {
+	margin: 10px 10px;
+	display: grid;
+	justify-items: start;
+	gap: 5px;
+}
+
+button {
+	margin-top: 0.5rem;
+}
+
+legend {
+	background-color: rgba(104, 168, 56, 0.783);
+	color: rgb(181, 20, 20);
+	padding: 0.2rem;
+}

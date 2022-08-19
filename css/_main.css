@@ -1,6 +1,22 @@
-.main {
-    display: grid;
-    grid-template-rows: auto;
-    margin-top: 11vh;
 
+
+.main {
+    display: flexbox;
+    margin-top: 100px;
+    margin-bottom: 8vh;
+    min-width: 40vh;
+    justify-content: center;
+    gap: 2rem;
 }
+
+@media (min-width: 768px) {
+    .content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .content {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

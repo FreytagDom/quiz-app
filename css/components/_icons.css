@@ -1,11 +1,23 @@
 
 .icons--home {
     grid-column-start: 1;
+    background: none;
+    border: none;
 }
 
 .icons--bookmark {
    grid-column-start: 2;
+   background: none;
+   border: none;
 }
 .icons--profile {
     grid-column-start: 3;
+    background: none;
+    border: none;
+}
+
+.add_icon{ 
+    grid-column-start: 4;
+    background: none;
+    border: none;
 }
